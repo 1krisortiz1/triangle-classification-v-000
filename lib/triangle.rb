@@ -14,6 +14,7 @@ class Triangle
     elsif @side1 <= 0 || /2side2 <= 0 || @side3
       raise TriangleError
     end
+  end
 
     if @side1 == @side2 && @side3
         :equilateral
