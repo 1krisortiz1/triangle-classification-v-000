@@ -11,7 +11,7 @@ class Triangle
 
     if (@side1 = @side2) <= @side3 || (@side2 = @side) <= @side1 || (@side1 + @side3) <= @side2
       raise TriangleError
-    elsif @side1 <= 0 || /2side2 <= 0 || @side3
+    elsif @side1 <= 0 || @2side2 <= 0 || @side3
       raise TriangleError
     end
   end
