@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind
-    if (@side1 = @side2) <= @side3 || (@side2 = @side) <= @side1 || (@side1 + @side3) <= @side2
+    if (@side1 + @side2) <= @side3 || (@side2 + @side) <= @side1 || (@side1 + @side3) <= @side2
       raise TriangleError
     elsif @side1 <= 0 || @side2 <= 0 || @side3
       raise TriangleError
@@ -26,5 +26,3 @@ class Triangle
 
     end
 end
-
-
